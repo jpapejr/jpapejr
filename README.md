@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+I tend to dump random nuggets of knowledge here in [this repo](https://github.com/jpapejr/jpapejr). Feel free to look around.
+
 <!--
 **jpapejr/jpapejr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
