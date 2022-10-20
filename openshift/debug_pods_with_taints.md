@@ -1,4 +1,4 @@
-Running debug pods on nodes with taints
+# Running debug pods on nodes with taints
 
 If you must run debug pods against nodes that have taints on them that would pprevent the debug nodes from being scheduled on them (I.e. dedicated=edge) you must create the debug pods in a specific namespace and patch the namespace with default tolerations.
 
