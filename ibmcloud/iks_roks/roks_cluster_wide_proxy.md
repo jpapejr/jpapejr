@@ -26,7 +26,7 @@ set -o xtrace
 CLUSTER=$1
 for NODE in `oc get no -oname`; do
     echo $NODE
-    oc debug $NODE -- /bin/sh -c 'echo NO_PROXY="localhost,cluster.local,.src,127.0.0.1,172.20.0.1,172.21.0.0/16,172.17.0.0/18,161.26.0.0/16,166.8.0.0/14,172.20.0.0/16,10.241.128.0/24,10.241.64.0/24,10.241.0.0/24"  > /host/etc/sysconfig/crio;'
+    oc debug $NODE -- /bin/sh -c 'echo NO_PROXY="localhost,cluster.local,.src,127.0.0.1,172.21.0.0/16,172.17.0.0/18,161.26.0.0/16,166.8.0.0/14,172.20.0.0/16,10.241.128.0/24,10.241.64.0/24,10.241.0.0/24"  > /host/etc/sysconfig/crio;'
     oc debug $NODE -- /bin/sh -c 'echo HTTP_PROXY="http://10.241.0.11:3128/" >> /host/etc/sysconfig/crio;'
     oc debug $NODE -- /bin/sh -c 'echo HTTPS_PROXY="http://10.241.0.11:3128/" >> /host/etc/sysconfig/crio;'
     oc debug $NODE -- /bin/sh -c 'cat /host/etc/sysconfig/crio;'
