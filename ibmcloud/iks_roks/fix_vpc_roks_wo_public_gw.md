@@ -9,6 +9,10 @@ The following steps will remedy this.
 `oc edit configs.samples.operator.openshift.io/cluster`
 
  change `managementState: Removed to managementState:Managed`
+
+ save & close
+
+ `oc edit OperatorHub` and set `disableAllDefaultSources: true` to `disableAllDefaultSources: false`
  
 save & close
 
