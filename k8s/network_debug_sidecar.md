@@ -1,4 +1,4 @@
-## Network debug sidecar (courtesy of @nfritze (https://github.com/nfritze) )
+## Network debug sidecar (courtesy of [@nfritze](https://github.com/nfritze) )
 
 ```
 - name: debug-sidecar
