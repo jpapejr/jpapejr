@@ -37,7 +37,7 @@ spec:
 
 ### Step 2 - run the pod to transfer the model files
 
-> Note this assumes you have already gotten the files over to an s3 bucket to begin with. I have a [helper script]() that 
+> Note this assumes you have already gotten the files over to an s3 bucket to begin with. I have a [helper script](https://github.com/jpapejr/jpapejr/blob/main/openshift/push-model-to-cos.py) that 
 > can help out. 
 
 
