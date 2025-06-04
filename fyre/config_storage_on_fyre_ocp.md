@@ -1,0 +1,4 @@
+
+To set up the storage see [https://github.ibm.com/vbudi/ocs-on-fyre#setting-up-local-storage-operator](https://github.ibm.com/vbudi/ocs-on-fyre#setting-up-local-storage-operator) or [https://docs.openshift.com/container-platform/4.5/storage/persistent_storage/persistent-storage-local.html](https://docs.openshift.com/container-platform/4.5/storage/persistent_storage/persistent-storage-local.html)
+
+Note: to oc login, ping the api endpoint to get the ip address, and use that instead of the server name. Also, use the Token instead of `kubeadmin` for this. SSH to LB using `kubeadmin` user, SSH to other nodes from LB using the core user.
